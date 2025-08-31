@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "501951951513",
+    "firebase_url": "https://deliverysystem-burgerking.firebaseio.com",
+    "project_id": "deliverysystem-burgerking",
+    "storage_bucket": "deliverysystem-burgerking.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:501951951513:android:41e510f99311e032",
+        "android_client_info": {
+          "package_name": "com.btracsolution.deliverysystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "501951951513-rddqu0jcmil3pkkna6vjbigdtoq22ddr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.btracsolution.deliverysystem",
+            "certificate_hash": "055f76ced28a88b7a601e8021f8499241ea05f40"
+          }
+        },
+        {
+          "client_id": "501951951513-lvu1ju6sm3m3pfjmi7ke161ajrtkq9oc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANfRD8mPb4gOVEfQ-BK2ENCY_hgg1BVDQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "501951951513-lvu1ju6sm3m3pfjmi7ke161ajrtkq9oc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:501951951513:android:bbb748fe07665551",
+        "android_client_info": {
+          "package_name": "com.btracsolutions.doorstep"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "501951951513-f747vqrvpht3ppsb1cp5oa9c8ubotr6g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.btracsolutions.doorstep",
+            "certificate_hash": "055f76ced28a88b7a601e8021f8499241ea05f40"
+          }
+        },
+        {
+          "client_id": "501951951513-lvu1ju6sm3m3pfjmi7ke161ajrtkq9oc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANfRD8mPb4gOVEfQ-BK2ENCY_hgg1BVDQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "501951951513-lvu1ju6sm3m3pfjmi7ke161ajrtkq9oc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
