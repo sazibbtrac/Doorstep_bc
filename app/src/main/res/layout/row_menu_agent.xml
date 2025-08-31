@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingTop="8dp"
+            android:weightSum="1.0">
+
+            <ImageView
+                android:id="@+id/im_food_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight=".1"
+
+                android:src="@drawable/burger" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".8"
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:weightSum="1.0">
+
+                <TextView
+                    android:id="@+id/id_food_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="BBQ Bacon WHOPPER"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/id_food_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:paddingTop="5dp"
+                    android:text="Price : Tk.999 All inclusive"
+                    android:textColor="@color/fed_color_on_incoming_page_more_black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/sw_menu_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight=".1"
+                android:visibility="visible"
+                android:paddingRight="5dp" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight=".1"
+                android:weightSum="2"
+                android:visibility="gone"
+                android:id="@+id/llAddSubsProduct">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/ivMinus"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_weight=".1"
+                    android:src="@drawable/minus"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etQty"
+                    android:layout_weight="0.8"
+                    android:textAlignment="center"
+                    android:enabled="true"
+                    android:text="0"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/ivAdd"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_weight=".1"
+                    android:src="@drawable/ic_add"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

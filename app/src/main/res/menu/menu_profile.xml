@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appcompat="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/profile_menu"
+        android:icon="@drawable/profile_image"
+        android:title="@string/profile"
+        appcompat:showAsAction="always" />
+
+</menu>

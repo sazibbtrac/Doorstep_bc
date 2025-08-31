@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_my_job"
+        android:enabled="true"
+        android:icon="@drawable/ic_home_black_36dp_agent"
+        android:title="List"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_my_completed_job"
+        android:enabled="true"
+        android:icon="@drawable/ic_completed_job"
+        android:title="Order"
+        app:showAsAction="ifRoom" />
+
+<!--    <item-->
+<!--        android:id="@+id/action_recent"-->
+<!--        android:enabled="true"-->
+<!--        android:icon="@drawable/ic_completed_job"-->
+<!--        android:title="Recent"-->
+<!--        app:showAsAction="ifRoom" />-->
+
+    <item
+        android:id="@+id/action_my_bill"
+        android:enabled="true"
+        android:icon="@drawable/statement"
+        android:title="Close"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_my_bill_history"
+        android:enabled="true"
+        android:visible="false"
+        android:icon="@drawable/statement"
+        android:title="History"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_my_profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_man_profile"
+        android:title="Profile"
+        app:showAsAction="ifRoom" />
+
+
+</menu>

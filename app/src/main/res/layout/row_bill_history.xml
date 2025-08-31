@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/list_name_agent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:weightSum="1.0">
+
+            <TextView
+                android:id="@+id/tx_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".6"
+                android:gravity="left"
+                android:paddingTop="2dp"
+                android:text="Riyad Muhab Harb"
+                android:textColor="#505050"
+                android:textSize="20sp" />
+
+
+
+            <FrameLayout
+                android:layout_width="1dp"
+                android:visibility="gone"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/fed_low_off_white">
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:visibility="gone"
+                android:background="@color/fed_low_off_white">
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Retry"
+                android:layout_marginRight="50dp"
+                android:textSize="16sp"
+                android:layout_gravity="right"
+                android:layout_weight=".1"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingStart="3dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:layout_marginLeft="80dp"
+                android:paddingTop="2dp"
+
+                android:background="@drawable/border_retry"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                />
+        </LinearLayout>
+
+-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tx_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Riyad Muhab Harb"
+                android:textColor="#505050"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="left|center_vertical"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/border_retry"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:id="@+id/retryTV"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:text="Retry"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tx_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LA-01"
+            android:textColor="#505050"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tx_bdt_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="left|center_vertical"
+                android:paddingTop="2dp"
+                android:text="BDT 1500"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/tx_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dr_rectengle"
+                android:text="  Print"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:textSize="16sp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:drawableLeft="@drawable/ic_printer" />
+
+
+
+        </RelativeLayout>
+
+
+       <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:weightSum="1.0">
+
+            <TextView
+                android:id="@+id/tx_bdt_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".6"
+                android:gravity="left"
+                android:paddingTop="2dp"
+                android:text="BDT 1500"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp" />
+
+            <FrameLayout
+                android:layout_width="1dp"
+                android:visibility="gone"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/fed_low_off_white">
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tx_total_item"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:text="Items: 3 "
+
+                android:textColor="@color/fed_color_on_incoming_page"
+                android:textSize="16sp" />
+
+            <FrameLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:visibility="gone"
+                android:background="@color/fed_low_off_white">
+
+            </FrameLayout>
+
+            <TextView
+                android:visibility="visible"
+                android:id="@+id/tx_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight=".1"
+                android:background="@drawable/dr_rectengle"
+                android:gravity="left"
+                android:padding="3dp"
+                android:layout_marginLeft="80dp"
+                android:paddingTop="2dp"
+                android:text="  Print"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:drawableLeft="@drawable/ic_printer" />
+        </LinearLayout>
+-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:srcCompat="@drawable/calen" />
+
+                <TextView
+                    android:id="@+id/tx_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:text="4 Feb, 2018"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:srcCompat="@drawable/time" />
+
+                <TextView
+                    android:id="@+id/tx_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:text="8:16 PM"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/fed_low_off_white">
+
+    </FrameLayout>
+
+</LinearLayout>

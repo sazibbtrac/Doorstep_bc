@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?><!-- START xml_defaults -->
+<defaultsMap>
+    <entry>
+        <key>loading_phrase</key>
+        <value>Fetching config…</value>
+    </entry>
+    <entry>
+        <key>show_mobile_verification</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>verification_title_text</key>
+        <value>Your phone number is not verified. Please verify it.</value>
+    </entry>
+    <entry>
+        <key>show_mobile_verification_tx_color</key>
+        <value>#ff0000</value>
+    </entry>
+    <entry>
+        <key>is_app_updated</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>reshow_counter</key>
+        <value>5</value>
+    </entry>
+    <entry>
+        <key>update_text</key>
+        <value>You need to update your apps please update</value>
+    </entry>
+    <entry>
+        <key>mendatory_update</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>app_version</key>
+        <value>50</value>
+    </entry>
+    <entry>
+        <key>notice_title</key>
+        <value>Sorry!</value>
+    </entry>
+    <entry>
+        <key>notice_detail</key>
+        <value>Very good dude</value>
+    </entry>
+    <entry>
+        <key>is_notification_show</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>is_checkout_close</key>
+        <value>false</value>
+    </entry>
+
+    <entry>
+        <key>rider_mendatory_update</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>rider_app_version</key>
+        <value>1</value>
+    </entry>
+    <entry>
+        <key>rider_update_text</key>
+        <value>You have to update you apps for future</value>
+    </entry>
+    <entry>
+        <key>rider_mendatory_update</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>rider_message</key>
+        <value>How are you everyone?</value>
+    </entry>
+    <entry>
+        <key>rider_message_code</key>
+        <value>100</value>
+    </entry>
+    <entry>
+        <key>rider_update_button_cancalable</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>rider_location_update</key>
+        <value>quick</value>
+    </entry>
+
+    <entry>
+        <key>base_url</key>
+        <value>https://doorstep.webheritagebd.com/public/api/v1/</value>
+    </entry>
+
+    <entry>
+        <key>version</key>
+        <value>4</value>
+    </entry>
+
+    <entry>
+        <key>updateurl</key>
+        <value>https://doorstep.webheritagebd.com/public/api/v1/</value>
+    </entry>
+
+    <!--425699-312036-->
+    <!--323732-->
+</defaultsMap><!-- END xml_defaults -->

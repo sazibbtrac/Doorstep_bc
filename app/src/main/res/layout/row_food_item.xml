@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_rounded_bg"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingTop="8dp"
+            android:weightSum="1.0">
+
+            <ImageView
+                android:id="@+id/im_food_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight=".1"
+                android:src="@drawable/burger" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight=".8"
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:weightSum="1.0">
+
+                <TextView
+                    android:id="@+id/id_food_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:text="BBQ Bacon WHOPPER"
+                    android:textColor="@color/txt_color_dark_deep"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/gilroy_bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:visibility="visible"
+                    android:id="@+id/llAddSubsProduct">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/ivMinus"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:src="@drawable/ic_minus"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/etQty"
+                        android:textColor="@color/txt_color_dark_deep"
+                        android:fontFamily="@font/gilroy_bold"
+                        android:textAlignment="center"
+                        android:enabled="true"
+                        android:text="0"/>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/ivAdd"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:src="@drawable/ic_add"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/id_food_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:ellipsize="marquee"
+                android:layout_weight=".1"
+                android:paddingTop="5dp"
+                android:text="BDT 999"
+                android:textColor="@color/fed_color_on_incoming_page_more_black"
+                android:textSize="14sp"
+                android:fontFamily="@font/gilroy_bold" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvAddNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="-20dp"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:text="Add notes"
+            android:textSize="13sp"
+            android:textColor="@color/green_availbility"
+            android:layout_gravity="right"
+            android:paddingRight="20dp"
+            android:paddingLeft="40dp"
+
+            />
+
+
+        <EditText
+            android:id="@+id/etNotes"
+            android:visibility="gone"
+            android:minHeight="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="Enter notes here . .  ."
+            android:inputType="textCapSentences|textMultiLine"
+            android:lines="3"
+            android:background="@drawable/bg_white_with_stroke"
+            android:maxLength="2000"
+            android:maxLines="4"
+            android:focusedByDefault="false"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

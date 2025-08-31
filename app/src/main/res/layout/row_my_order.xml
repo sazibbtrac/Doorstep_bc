@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:paddingTop="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="5dp"
+            android:paddingTop="12dp">
+
+            <TextView
+                android:id="@+id/tx_customer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="Riyad Muhab Harb"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/lin_location"
+                android:orientation="horizontal"
+                android:paddingTop="8dp"
+                android:weightSum="1.0">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:paddingRight="5dp"
+                        android:paddingTop="2dp"
+                        android:src="@drawable/ic_map_pointer"
+                        android:tint="@color/colorAccent" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tx_customer_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".9"
+                    android:ellipsize="marquee"
+                    android:maxLines="3"
+                    android:paddingLeft="5dp"
+                    android:text=""
+                    android:textColor="@color/fed_color_on_incoming_page"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:id="@+id/lin_call"
+                android:orientation="horizontal"
+                android:paddingTop="2dp"
+                android:weightSum="1.0">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1">
+
+                    <ImageView
+                        android:id="@+id/im_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_call_black_24dp"
+                        android:tint="@color/colorAccent" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tx_phone_number"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".9"
+                    android:ellipsize="marquee"
+                    android:gravity="center_vertical"
+                    android:maxLines="3"
+                    android:paddingLeft="5dp"
+                    android:text="01721755524"
+                    android:textColor="@color/fed_color_on_incoming_page"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tx_detail_of_job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dr_background_textview"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+
+            android:text="@string/order_details"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

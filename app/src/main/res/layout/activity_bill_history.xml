@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cart_bg_color"
+    android:orientation="vertical"
+    tools:context=".Features.Waiter.Features.BillHistory.BillHistoryActivity">
+
+
+    <include
+        android:id="@+id/bar"
+        layout="@layout/toolbar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/white_rounded_bg"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:src="@drawable/ic_man_profile" />
+
+        <AutoCompleteTextView
+            android:id="@+id/etSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/gilroy_bold"
+            android:hint="Enter member id"
+            android:textColor="@color/txt_color_bl"
+
+            />
+
+        <ImageView
+            android:id="@+id/ivCross"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:padding="7dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/ic_search_bl" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rel_no_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:tint="@color/colorAccent"
+            app:srcCompat="@drawable/ic_remove_shopping_cart_black_48dp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView10"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/no_order_found"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:scrollbars="vertical"
+        tools:itemCount="2"
+        tools:listitem="@layout/row_bill_history" />
+</androidx.appcompat.widget.LinearLayoutCompat>

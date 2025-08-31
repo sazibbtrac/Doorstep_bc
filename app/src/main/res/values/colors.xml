@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#b5030c</color>
+    <color name="colorPrimaryDark">#b5030c</color>
+    <color name="colorAccent">#b5030c</color>
+    <color name="LightcolorAccent">#f26a33</color>
+    <color name="off_white">#E6E6E6</color>
+    <color name="low_off_white">#ACACAC</color>
+    <color name="fed_low_off_white">#88ACACAC</color>
+    <color name="black">#000000</color>
+    <color name="color_border">#E4E4E4</color>
+    <color name="colorfed">#A7A7A7</color>
+    <color name="fed_accent_color">#F2B096</color>
+    <color name="white">#ffffff</color>
+    <color name="fed">#757575</color>
+    <color name="back_profile">#F6F6F6</color>
+    <color name="fed_color_on_incoming_page">#7f7f7f</color>
+    <color name="line_color">#E3E3E3</color>
+    <color name="fed_color_on_incoming_page_more_black">#353535</color>
+    <color name="fed_home_screen">#727274</color>
+    <color name="all_back">#EEEEF0</color>
+    <color name="fed_greed">#78A44D</color>
+    <color name="tx_stm_color">#A2A2A2</color>
+    <color name="tx_color">#454545</color>
+    <color name="dr_color">#F5F5F5</color>
+    <color name="drst__color">#646464</color>
+    <color name="green_availbility">#4CB050</color>
+    <color name="red_availbility">#FE0000</color>
+    <color name="rider_assign_back_color">#F0F0F0</color>
+    <color name="cart_bg_color">#E5E5E5</color>
+    <color name="txt_color_bl">#181B19</color>
+    <color name="txt_color_dark_deep">#181725</color>
+</resources>

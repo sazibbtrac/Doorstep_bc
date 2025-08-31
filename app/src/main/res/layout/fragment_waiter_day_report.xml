@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/all_back"
+
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_waiter"
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/all_back"
+
+        android:orientation="vertical">
+
+
+        <include layout="@layout/row_agent_datepicker"
+            android:id="@+id/row_agent_datepicker"/>
+
+        <TextView
+            android:id="@+id/tx_today_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingBottom="2dp"
+            android:paddingRight="12dp"
+            android:paddingTop="2dp"
+            android:text="Jan 20 , 2018"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+
+        <RelativeLayout
+            android:id="@+id/rel_no_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_remove_shopping_cart_black_48dp"
+                app:tint="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView10"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/no_order_found"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_day_report"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+
+        <!--    <include layout="@layout/row_agent_my_day_item" />
+
+            <include layout="@layout/row_agent_my_day_item" />
+
+            <include layout="@layout/row_agent_my_day_item" />
+
+            <include layout="@layout/row_agent_my_day_item" />
+
+            <include layout="@layout/row_agent_my_day_item" />-->
+
+
+    </LinearLayout>
+</LinearLayout>

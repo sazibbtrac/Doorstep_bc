@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:paddingTop="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="Customer Details"
+                android:textColor="@color/colorAccent"
+                android:textSize="20dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tx_user_name"
+                android:layout_width="0dp"
+                android:layout_weight="7"
+                android:layout_height="wrap_content"
+                android:text="Riyad Muhab Harb"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/tvEditMember"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:text="Edit member"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="right"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tx_order_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:ellipsize="marquee"
+                android:paddingLeft="0dp"
+                android:text="From"
+                android:textColor="@color/fed_color_on_incoming_page"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tx_pmethod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:ellipsize="marquee"
+                android:paddingLeft="0dp"
+                android:text="Payment Method: "
+                android:textColor="@color/fed_color_on_incoming_page"
+                android:textSize="14sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:paddingTop="8dp"
+                android:weightSum="1.0">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:src="@drawable/ic_map_pointer"
+                    app:tint="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/tx_user_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:ellipsize="marquee"
+                    android:paddingLeft="8dp"
+                    android:text=""
+                    android:textColor="@color/fed_color_on_incoming_page"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:tint="@color/colorAccent"
+                    app:srcCompat="@drawable/ic_phone_black_24dp" />
+
+                <TextView
+                    android:id="@+id/tx_user_phone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight=".7"
+                    android:ellipsize="marquee"
+                    android:paddingLeft="8dp"
+                    android:text="01709647295"
+                    android:textColor="@color/fed_color_on_incoming_page"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lin_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:src="@drawable/ic_email_black_18dp"
+                    android:tint="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/tx_user_email"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight=".7"
+                    android:ellipsize="marquee"
+                    android:paddingLeft="8dp"
+                    android:text="mahmudul.hasan@btraccl.com"
+                    android:textColor="@color/fed_color_on_incoming_page"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="left"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rlPrint"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"
+               >
+
+                <ImageView
+                    android:id="@+id/ivPrint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="5dp"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@drawable/ic_printer" />
+
+                <TextView
+                    android:id="@+id/tvPrint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ivPrint"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingRight="25dp"
+                    android:paddingBottom="5dp"
+                    android:text="Print     "
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_call_now"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/dr_background_callnow">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="5dp"
+                    android:tint="@color/white"
+                    app:srcCompat="@drawable/ic_phone_black_24dp" />
+
+                <TextView
+                    android:id="@+id/tx_user_call_now"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/imageView3"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingRight="25dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/call_now_text"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

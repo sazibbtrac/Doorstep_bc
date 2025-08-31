@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    tools:showIn="@layout/fragment_sms_send">
+
+
+    <LinearLayout
+        android:id="@+id/rel_checkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:visibility="visible"
+        android:weightSum="1.0">
+
+
+        <CheckBox
+            android:id="@+id/chk_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight=".5"
+            android:checked="true"
+            android:text="@string/phone" />
+
+        <CheckBox
+            android:id="@+id/chk_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="@string/email" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tx_title_forgot_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/verifu_phn"
+            android:textColor="@color/fed_home_screen"
+            android:textSize="14sp" />
+
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/et_verify_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_border_off_white_color"
+                android:gravity="center"
+                android:hint="@string/enter_phone_number"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/verify_phn_number"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textEmailAddress|phone"
+                android:maxLines="1"
+                android:padding="15dp"
+                android:visibility="gone"
+                tools:ignore="InvalidImeActionId" />
+
+
+            <EditText
+                android:id="@+id/et_activation_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_border_off_white_color"
+                android:gravity="center"
+                android:hint="@string/activation_code"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/verify_phn_number"
+                android:imeOptions="actionUnspecified"
+                android:inputType="numberSigned"
+                android:maxLines="1"
+                android:padding="15dp"
+                tools:ignore="InvalidImeActionId" />
+
+
+            <TextView
+                android:id="@+id/tx_send_code"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/dr_rounded_button_update_profile"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="@string/submit"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/tx_submit_code"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/dr_rounded_button_update_profile"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="@string/SUBMIT_ACTIVATION_CODE"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tx_resend_verify_code"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/resend_verify_code"
+                android:textColor="@color/LightcolorAccent"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
